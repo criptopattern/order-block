@@ -1,65 +1,176 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: #f7faff;
   color: #1a237e;
   margin: 0;
   padding: 0;
 }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 .header {
-  background: #1976d2;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
   color: #fff;
-  padding: 40px 20px 20px 20px;
+  padding: 48px 0 32px 0;
   text-align: center;
 }
 .header h1 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 2.2em;
 }
 .header h2 {
   font-weight: 400;
+  margin-bottom: 24px;
 }
-section {
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 20px;
+.hero-img {
+  text-align: center;
+  margin: 32px 0 0 0;
+}
+.hero-img img {
+  max-width: 95%;
+  border-radius: 12px;
+  border: 3px solid #1976d2;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+}
+.beneficios {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-}
-.beneficios ul, .publico ul, .indicador-em-acao ul {
-  padding-left: 20px;
-}
-.indicador-em-acao {
+  margin-top: 32px;
+  padding: 32px 24px;
   text-align: center;
 }
-.indicador-img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 20px 0;
-  border: 2px solid #1976d2;
+.beneficios ul {
+  text-align: left;
+  margin: 24px auto 24px auto;
+  max-width: 600px;
+  padding-left: 0;
+  list-style: none;
 }
-.cta {
-  text-align: center;
-  margin: 40px 0;
+.beneficios li {
+  margin-bottom: 14px;
+  font-size: 1.1em;
+  padding-left: 0;
 }
 .botao-compra {
+  display: inline-block;
   background: #1976d2;
   color: #fff;
   padding: 18px 40px;
   border-radius: 30px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-decoration: none;
   font-weight: bold;
+  margin: 24px 0 0 0;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
   transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.botao-compra.grande {
+  font-size: 1.4em;
+  padding: 22px 60px;
 }
 .botao-compra:hover {
   background: #0d47a1;
 }
+.bonus-garantia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.bonus, .garantia {
+  flex: 1 1 300px;
+  background: #e3f2fd;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 0 0 0 0;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);
+}
+.bonus h3, .garantia h3 {
+  margin-top: 0;
+}
+.depoimentos {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.depoimentos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+.depoimento {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 20px;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+}
+.depoimento img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 2px solid #1976d2;
+}
+.depoimento p {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.depoimento span {
+  font-weight: bold;
+  color: #1976d2;
+}
+.faq {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+}
+.faq h3 {
+  margin-top: 0;
+}
+.faq-item {
+  margin-bottom: 18px;
+}
+.faq-item h4 {
+  margin-bottom: 6px;
+  color: #1976d2;
+  font-size: 1.08em;
+}
+.cta-final {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+.garantia-texto {
+  color: #1976d2;
+  margin-top: 12px;
+  font-size: 1.1em;
+}
 .footer {
   text-align: center;
-  padding: 20px;
+  padding: 24px 0;
   background: #e3f2fd;
   color: #1976d2;
   margin-top: 40px;
-  font-size: 0.95em;
+  font-size: 1em;
+}
+@media (max-width: 900px) {
+  .bonus-garantia, .depoimentos-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .container {
+    padding: 0 8px;
+  }
 }
