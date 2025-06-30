@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7faff;
+  color: #1a237e;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: #1976d2;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 10px;
+}
+.header h2 {
+  font-weight: 400;
+}
+section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.beneficios ul, .publico ul, .indicador-em-acao ul {
+  padding-left: 20px;
+}
+.indicador-em-acao {
+  text-align: center;
+}
+.indicador-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 2px solid #1976d2;
+}
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+.botao-compra {
+  background: #1976d2;
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 30px;
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+  transition: background 0.2s;
+}
+.botao-compra:hover {
+  background: #0d47a1;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #e3f2fd;
+  color: #1976d2;
+  margin-top: 40px;
+  font-size: 0.95em;
+}
